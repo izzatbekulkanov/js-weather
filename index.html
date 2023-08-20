@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>js-weather</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="app-wrap">
+        <main>
+            <section class="location">
+                <div class="city">Egypt, US</div>
+                <div class="date">Saturday 21 August 2023</div>
+            </section>
+            <div class="main-temp">
+                <div class="temp">8°C</div>
+                <div class="weather">Fog</div>
+                <div class="hi-low">19°C / 25°C</div>
+                <div class="description"></div>
+            </div>
+            <div class="current">
+                    <img src="`http://openweathermap.org/img/w/${iconCode}.png`" alt="" class="icon">
+            </div>
+        </main>
+        <header>
+            <input type="text" class="search-box" autocomplete="off" placeholder="search...">
+        </header>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
